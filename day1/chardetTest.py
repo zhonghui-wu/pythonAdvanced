@@ -11,5 +11,5 @@ def get_encoding(file):
         data = f.read()
         return chardet.detect(data)
 
-enData = get_encoding('/Users/wuzhonghui/PycharmProjects/pythonAdvanced/a.txt')
-print(enData)
+# enData = get_encoding('/Users/wuzhonghui/PycharmProjects/pythonAdvanced/a.txt')
+# print(enData)

@@ -26,7 +26,7 @@ from subprocess import Popen,PIPE
 # output,err = child.communicate()
 # print(output)
 
-'''Popen函数正确传参方法：Popen(（'python3'，'ioTest.py'）, stdout=PIPE, encoding='utf-8')'''
+'''Popen函数正确传参方法：Popen(（'python3'，'ioTest.py'）, stdout=PIPE,stdin=PIPE, encoding='utf-8')'''
 #输入重定向
 child = Popen(('python3','ioTest.py'), stdout=PIPE,stdin=PIPE, encoding='utf-8')#stdout输出，stdin输入，Mac端要同时有这两个参数
 

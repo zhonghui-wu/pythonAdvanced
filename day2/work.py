@@ -20,3 +20,8 @@ ps：
 '''
 
 import uuid
+
+print(uuid.uuid1()) #等于  5269e1c0-0c76-11eb-ba67-8c8590f124be
+print(uuid.uuid4()) #随机数生成的
+print(uuid.uuid3(uuid.NAMESPACE_DNS,'test')) #等于  45a113ac-c7f2-30b0-90a5-a399ab912716
+print(uuid.uuid5(uuid.NAMESPACE_DNS,'test1')) #等于  86e3aed3-1553-5d23-8d61-2286215e65f1

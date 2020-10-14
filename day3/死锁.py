@@ -9,28 +9,28 @@ lockB = threading.Lock()  # 小明的锁
 
 # 面试官
 def foo1():
-    lockR.acquire()  # 上锁
+    lockA.acquire()  # 上锁
     print('请解释什么是死锁')
     time.sleep(1)
 
-    lockR.acquire()  # 上锁
+    lockB.acquire()  # 上锁
     print('发offer')
     time.sleep(1)
 
-    lockR.release()
-    lockR.release()
+    lockA.release()
+    lockB.release()
 
 def foo2():
-    lockR.acquire()  # 上锁
+    lockB.acquire()  # 上锁
     print('请先给我发offer')
     time.sleep(1)
 
-    lockR.acquire()  # 上锁
+    lockA.acquire()  # 上锁
     print('解释什么是死锁')
     time.sleep(1)
 
-    lockR.release()
-    lockR.release()
+    lockA.release()
+    lockB.release()
 
 
 t1 = threading.Thread(target=foo1)

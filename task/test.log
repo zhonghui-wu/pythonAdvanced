@@ -1,0 +1,5 @@
+2020-10-21 17:51:31,696 log.py DEBUG: 这是一个debug日志
+2020-10-21 17:51:31,696 log.py INFO: 这是一个info日志
+2020-10-21 17:51:31,698 log.py WARNING: 这是一个warning日志
+2020-10-21 17:51:31,699 log.py ERROR: 这是一个error日志
+2020-10-21 17:51:31,714 log.py CRITICAL: 这是一个critical日志
